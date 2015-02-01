@@ -95,7 +95,6 @@ angular.module('songsByCountryApp').controller('searchController', ['$scope', 's
 		$scope.track = attributes.name + ' - ' + attributes.artists[0].name;
 
 		if ($scope.showList) {
-			console.log(attributes);
 			translateCountryCode(attributes.available_markets);
 		}
 	};
