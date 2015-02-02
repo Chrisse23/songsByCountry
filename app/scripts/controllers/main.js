@@ -81,6 +81,7 @@ angular.module('songsByCountryApp').controller('searchController', ['$scope', 's
 	$scope.searchForSongs = function () {
 		$scope.countries = [];
 		nextTrack = 0;
+		$scope.track = '';
 
 		if ($scope.query) {
 			var promise = searchService.search($scope.query);
