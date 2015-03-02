@@ -1,0 +1,131 @@
+//Variables
+
+$headerBackgroundColor: #000000;
+
+//mixins
+
+@mixin marginBottom($pixels) {
+	margin-bottom: $pixels;
+}
+
+@mixin marginTop($pixels) {
+	margin-top: $pixels;
+}
+
+@mixin black($direction) {
+	width: 50%;
+	height: 100%;
+	background-color: black;
+	color: white;
+	float: $direction;
+}
+
+@mixin white($direction) {
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	color: black;
+	float: $direction;
+}
+
+@mixin center {
+	display: block;
+	text-align: center;
+	@include marginTop(50%);
+}
+
+//Classes
+
+.marginBottom {
+	@include marginBottom(10px);
+}
+
+.marginTop {
+	@include marginTop(10px);
+}
+
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.black {
+	@include black(left);
+}
+
+.white {
+	@include white(right);
+}
+
+.white--left {
+	@include white(left);
+}
+
+.black--right {
+	@include black(right);
+}
+
+h2 {
+	text-align: center;
+	@include marginTop(50%);
+	font-size: 34px;
+	font-family: 'Raleway', sans-serif;
+}
+
+i {
+	padding-left: 10px;
+}
+
+.fa-envelope-o {
+	color: black;
+}
+
+.fa-github {
+	color: black;
+}
+
+.fa-linkedin-square {
+	color: black;
+}
+
+.center {
+	@include center();
+}
+
+.menu {
+	border: 1px solid #000000;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	padding: 20px;
+}
+
+@media all and (max-width: 768px) {
+	.black, .white, .black--right, .white--left {
+		width: 100%;
+	}
+
+	h2 {
+		@include marginTop(7em);
+	}
+
+	.center {
+		@include marginTop(14em);
+	}
+}
+

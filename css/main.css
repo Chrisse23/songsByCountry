@@ -1,0 +1,86 @@
+.marginBottom {
+  margin-bottom: 10px; }
+
+.marginTop {
+  margin-top: 10px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.black {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  float: left; }
+
+.white {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  float: right; }
+
+.white--left {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  float: left; }
+
+.black--right {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  float: right; }
+
+h2 {
+  text-align: center;
+  margin-top: 50%;
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif; }
+
+i {
+  padding-left: 10px; }
+
+.fa-envelope-o {
+  color: black; }
+
+.fa-github {
+  color: black; }
+
+.fa-linkedin-square {
+  color: black; }
+
+.center {
+  display: block;
+  text-align: center;
+  margin-top: 50%; }
+
+.menu {
+  border: 1px solid #000000; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 20px; }
+
+@media all and (max-width: 768px) {
+  .black, .white, .black--right, .white--left {
+    width: 100%; }
+  h2 {
+    margin-top: 7em; }
+  .center {
+    margin-top: 14em; } }
