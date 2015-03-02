@@ -78,8 +78,7 @@ html, body {
 }
 
 h2 {
-	text-align: center;
-	@include marginTop(50%);
+	@include center();
 	font-size: 34px;
 	font-family: 'Raleway', sans-serif;
 }
@@ -104,6 +103,12 @@ i {
 	@include center();
 }
 
+.quote {
+	font-style: italic;
+	text-align: center;
+	@include marginTop(20px);
+}
+
 .menu {
 	border: 1px solid #000000;
 }
@@ -126,6 +131,10 @@ a {
 
 	.center {
 		@include marginTop(14em);
+	}
+
+	.silhouette {
+		display: none;
 	}
 }
 

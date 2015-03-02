@@ -46,6 +46,7 @@ html, body {
   float: right; }
 
 h2 {
+  display: block;
   text-align: center;
   margin-top: 50%;
   font-size: 34px;
@@ -68,6 +69,11 @@ i {
   text-align: center;
   margin-top: 50%; }
 
+.quote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px; }
+
 .menu {
   border: 1px solid #000000; }
 
@@ -83,4 +89,6 @@ a {
   h2 {
     margin-top: 7em; }
   .center {
-    margin-top: 14em; } }
+    margin-top: 14em; }
+  .silhouette {
+    display: none; } }
