@@ -78,24 +78,21 @@ html, body {
 }
 
 h2 {
-	@include center();
 	font-size: 34px;
 	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	text-align: center;
 }
 
 i {
 	padding-left: 10px;
 }
 
-.fa-envelope-o {
-	color: black;
-}
-
-.fa-github {
-	color: black;
-}
-
-.fa-linkedin-square {
+.fa-envelope-o, .fa-github, .fa-linkedin-square {
 	color: black;
 }
 
@@ -109,10 +106,6 @@ i {
 	@include marginTop(20px);
 }
 
-.menu {
-	border: 1px solid #000000;
-}
-
 a {
 	text-decoration: none;
 	color: black;
@@ -120,21 +113,23 @@ a {
 	padding: 20px;
 }
 
+p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	@include marginTop(20px);
+}
+
 @media all and (max-width: 768px) {
 	.black, .white, .black--right, .white--left {
 		width: 100%;
 	}
 
-	h2 {
+	.center {
 		@include marginTop(7em);
 	}
 
-	.center {
-		@include marginTop(14em);
-	}
-
-	.silhouette {
-		display: none;
+	.fa-envelope-o, .fa-github, .fa-linkedin-square {
+		display: block;
 	}
 }
 
