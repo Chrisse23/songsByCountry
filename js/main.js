@@ -11,9 +11,12 @@ $(document).ready(function () {
 	var circle = $('.circle');
 
 	$(window).scroll(function () {
-		circle.stop().animate({
-			'top': circle.scrollTop()
-		}, 100);
+		var circlePos = circle.offset().top;
+		if (circlePos > 600) {
+			circle.css('display', 'block');
+		} else {
+			circle.css('display', 'none');
+		}
 	});
 
 	$('.circle').click(function () {

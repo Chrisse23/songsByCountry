@@ -83,7 +83,7 @@ p {
   padding-left: 50px;
   padding-right: 50px; }
 
-.circle, [class*="circle--"] {
+.circle {
   width: 55px;
   height: 45px;
   border: 2px solid #E10000;
@@ -98,8 +98,10 @@ p {
   padding-top: 10px;
   position: fixed;
   color: white;
-  right: 0; }
-  .circle:hover, [class*="circle--"]:hover {
+  right: 0;
+  top: 80%;
+  display: none; }
+  .circle:hover {
     cursor: pointer; }
 
 @media all and (max-width: 768px) {
@@ -110,4 +112,6 @@ p {
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
     display: block; }
   p {
-    padding: 0px; } }
+    padding: 0px; }
+  .circle {
+    padding-top: 8px; } }

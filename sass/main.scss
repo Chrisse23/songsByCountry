@@ -122,7 +122,7 @@ p {
 	padding-right: 50px;
 }
 
-.circle, [class*="circle--"] {
+.circle {
 	width: 55px;
 	height: 45px;
 	border: 2px solid $red;
@@ -141,10 +141,8 @@ p {
 	&:hover {
 		cursor: pointer;
 	}
-}
-
-[class*="--noCenter"] {
-
+	top: 80%;
+	display: none;
 }
 
 @media all and (max-width: 768px) {
@@ -162,6 +160,11 @@ p {
 
 	p {
 		padding: 0px;
+	}
+
+	.circle {
+		padding-top: 8px;
+		
 	}
 }
 
