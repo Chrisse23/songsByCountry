@@ -105,7 +105,8 @@ p {
 
 @media all and (max-width: 768px) {
   .black, .white, .black--right, .white--left {
-    width: 100%; }
+    width: 100%;
+    overflow: scroll; }
   .center {
     margin-top: 7em; }
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
