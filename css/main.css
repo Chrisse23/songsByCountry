@@ -113,4 +113,5 @@ p {
   p {
     padding: 0px; }
   .circle {
-    padding-top: 8px; } }
+    padding-top: 8px;
+    top: 0; } }
