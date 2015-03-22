@@ -99,7 +99,8 @@ p {
   position: fixed;
   color: white;
   right: 0;
-  top: 80%; }
+  top: 80%;
+  display: none; }
   .circle:hover {
     cursor: pointer; }
 
