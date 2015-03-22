@@ -79,7 +79,27 @@ a {
 p {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.circle, [class*="circle--"] {
+  width: 55px;
+  height: 45px;
+  border: 2px solid #E10000;
+  background-color: #E10000;
+  float: right;
+  margin: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  z-index: 10;
+  text-align: center;
+  padding-top: 10px;
+  position: fixed;
+  top: 500;
+  color: white;
+  right: 0; }
 
 @media all and (max-width: 768px) {
   .black, .white, .black--right, .white--left {
@@ -87,4 +107,6 @@ p {
   .center {
     margin-top: 7em; }
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
-    display: block; } }
+    display: block; }
+  p {
+    padding: 0px; } }
