@@ -2,6 +2,8 @@
 
 $headerBackgroundColor: #000000;
 $red: #E10000;
+$white: #FFFFFF;
+$black: #000000;
 
 //mixins
 
@@ -17,15 +19,15 @@ $red: #E10000;
 	width: 50%;
 	height: 100%;
 	background-color: black;
-	color: white;
+	color: $white;
 	float: $direction;
 }
 
 @mixin white($direction) {
 	width: 50%;
 	height: 100%;
-	background-color: white;
-	color: black;
+	background-color: $white;
+	color: $black;
 	float: $direction;
 }
 
@@ -94,7 +96,7 @@ i {
 }
 
 .fa-envelope-o, .fa-github, .fa-linkedin-square {
-	color: black;
+	color: $black;
 }
 
 .center {
@@ -109,14 +111,14 @@ i {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: $black;
 	font-size: 24px;
 	padding: 20px;
 }
 
 p {
 	font-family: 'Libre Baskerville', serif;
-	text-align: center;
+	text-align: left;
 	@include marginTop(20px);
 	padding-left: 50px;
 	padding-right: 50px;
@@ -158,7 +160,7 @@ p {
 	}
 
 	p {
-		padding: 0px;
+		padding: 8px;
 	}
 
 	.circle {

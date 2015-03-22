@@ -21,28 +21,28 @@ html, body {
   width: 50%;
   height: 100%;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
   float: left; }
 
 .white {
   width: 50%;
   height: 100%;
-  background-color: white;
-  color: black;
+  background-color: #FFFFFF;
+  color: #000000;
   float: right; }
 
 .white--left {
   width: 50%;
   height: 100%;
-  background-color: white;
-  color: black;
+  background-color: #FFFFFF;
+  color: #000000;
   float: left; }
 
 .black--right {
   width: 50%;
   height: 100%;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
   float: right; }
 
 h2 {
@@ -58,7 +58,7 @@ i {
   padding-left: 10px; }
 
 .fa-envelope-o, .fa-github, .fa-linkedin-square {
-  color: black; }
+  color: #000000; }
 
 .center {
   display: block;
@@ -72,13 +72,13 @@ i {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-size: 24px;
   padding: 20px; }
 
 p {
   font-family: 'Libre Baskerville', serif;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   padding-left: 50px;
   padding-right: 50px; }
@@ -111,7 +111,7 @@ p {
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
     display: block; }
   p {
-    padding: 0px; }
+    padding: 8px; }
   .circle {
     padding-top: 8px;
     top: 0; } }
