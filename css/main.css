@@ -97,9 +97,10 @@ p {
   text-align: center;
   padding-top: 10px;
   position: fixed;
-  top: 500;
   color: white;
   right: 0; }
+  .circle:hover, [class*="circle--"]:hover {
+    cursor: pointer; }
 
 @media all and (max-width: 768px) {
   .black, .white, .black--right, .white--left {

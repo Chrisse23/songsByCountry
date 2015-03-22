@@ -10,15 +10,9 @@ $(document).ready(function () {
 
 	var circle = $('.circle');
 
-	var initCircle = function () {
-		circle.stop().animate({
-			'top': 500
-		}, 100);
-	}
-
 	$(window).scroll(function () {
 		circle.stop().animate({
-			'top': 500
+			'top': circle.scrollTop()
 		}, 100);
 	});
 

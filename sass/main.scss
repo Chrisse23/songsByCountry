@@ -136,9 +136,11 @@ p {
 	text-align: center;
 	padding-top: 10px;
 	position: fixed;
-	top: 500;
 	color: white;
 	right: 0;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 [class*="--noCenter"] {
