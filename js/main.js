@@ -20,24 +20,24 @@ $(document).ready(function () {
 
 	$('.overlayButton').on('click', function () {
 		$('.overlay').css('display', 'block');
-		$('body, html').css('overflow', 'hidden');
+		$('body').css('overflow', 'hidden');
+		$('.circle').css('display', 'none');
 		$('body, html').animate({
 			scrollTop: $('.overlay').offset().top
 		}, 500);
-		circle.css('display', 'none');
 	});
 
 	$(window).on('keydown', function(e) {
 		if (e.which === 27) {
 			$('.overlay').css('display', 'none');
-			$('body, html').css('overflow', 'auto');
-			circle.css('display', 'block');
+			$('body').css('overflow', 'auto');
+			$('.circle').css('display', 'block');
 		}
 	});
 
 	$('.fa-times').on('click', function () {
 		$('.overlay').css('display', 'none');
-		$('body, html').css('overflow', 'auto');
-		circle.css('display', 'block');
+		$('body').css('overflow', 'auto');
+		$('.circle').css('display', 'block');
 	});
 });

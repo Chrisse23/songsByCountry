@@ -29,7 +29,8 @@ html, body {
   height: 100%;
   background-color: #FFFFFF;
   color: #000000;
-  float: right; }
+  float: right;
+  text-align: center; }
 
 .white--left {
   width: 50%;
@@ -110,7 +111,6 @@ p {
   width: 140px;
   height: 50px;
   margin-top: 50%;
-  margin-left: 50%;
   border: none;
   border-bottom: 2px solid #E10000;
   box-shadow: 0px -2px 0px 5px #E10000 inset;
@@ -160,4 +160,4 @@ p {
   .overlay h3 {
     display: none; }
   .overlay p {
-    padding-top: 5%; } }
+    padding-top: 10%; } }
