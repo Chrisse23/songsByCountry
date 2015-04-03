@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 	$('.overlayButton').on('click', function () {
 		$('.overlay').css('display', 'block');
-		$('body').css('overflow', 'hidden');
+		$('body, html').css('overflow', 'hidden');
 		$('body, html').animate({
 			scrollTop: $('.overlay').offset().top
 		}, 500);
@@ -30,14 +30,14 @@ $(document).ready(function () {
 	$(window).on('keydown', function(e) {
 		if (e.which === 27) {
 			$('.overlay').css('display', 'none');
-			$('body').css('overflow', 'auto');
+			$('body, html').css('overflow', 'auto');
 			circle.css('display', 'block');
 		}
 	});
 
 	$('.fa-times').on('click', function () {
 		$('.overlay').css('display', 'none');
-		$('body').css('overflow', 'auto');
+		$('body, html').css('overflow', 'auto');
 		circle.css('display', 'block');
 	});
 });
