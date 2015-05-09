@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Rispa;
+  src: url('../fonts/Rispa-regular.otf') format('opentype'); }
+
+@font-face {
+  font-family: Matchbook;
+  src: url('../fonts/Matchbook.ttf') format('opentype'); }
+
 .marginBottom {
   margin-bottom: 10px; }
 
@@ -47,12 +55,12 @@ html, body {
   float: right; }
 
 h2 {
-  font-size: 34px;
-  font-family: 'Raleway', sans-serif; }
+  font-size: 50px;
+  font-family: Rispa; }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-family: Rispa;
+  font-size: 32px;
   text-align: center; }
 
 i {
@@ -78,11 +86,12 @@ a {
   padding: 20px; }
 
 p {
-  font-family: 'Libre Baskerville', serif;
+  font-family: Matchbook;
   text-align: left;
   margin-top: 20px;
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  font-size: 32px; }
 
 .circle {
   width: 55px;
@@ -129,10 +138,10 @@ p {
   text-align: center;
   overflow: auto; }
   .overlay h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: Rispa;
     padding-top: 5%; }
   .overlay p {
-    font-family: 'Libre Baskerville', serif;
+    font-family: Matchbook;
     text-align: center;
     padding-right: 25%;
     padding-left: 25%; }
@@ -146,7 +155,7 @@ p {
   .black, .white, .black--right, .white--left {
     width: 100%; }
   .center {
-    margin-top: 7em; }
+    margin-top: 5em; }
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
     display: block; }
   p {

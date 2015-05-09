@@ -37,6 +37,16 @@ $black: #000000;
 	@include marginTop(50%);
 }
 
+@font-face {
+	font-family: Rispa;
+	src: url('../fonts/Rispa-regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Matchbook;
+	src: url('../fonts/Matchbook.ttf') format('opentype');
+}
+
 //Classes
 
 .marginBottom {
@@ -82,13 +92,13 @@ html, body {
 }
 
 h2 {
-	font-size: 34px;
-	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	font-family: Rispa;
 }
 
 h3 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+	font-family: Rispa;
+	font-size: 32px;
 	text-align: center;
 }
 
@@ -118,11 +128,12 @@ a {
 }
 
 p {
-	font-family: 'Libre Baskerville', serif;
+	font-family: Matchbook;
 	text-align: left;
 	@include marginTop(20px);
 	padding-left: 50px;
 	padding-right: 50px;
+	font-size: 32px;
 }
 
 .circle {
@@ -174,12 +185,12 @@ p {
 	overflow: auto;
 
 	h3 {
-		font-family: 'Raleway', sans-serif;
+		font-family: Rispa;
 		padding-top: 5%;
 	}
 
 	p {
-		font-family: 'Libre Baskerville', serif;
+		font-family: Matchbook;
 		text-align: center;
 		padding-right: 25%;
 		padding-left: 25%;
@@ -199,7 +210,7 @@ p {
 	}
 
 	.center {
-		@include marginTop(7em);
+		@include marginTop(5em);
 	}
 
 	.fa-envelope-o, .fa-github, .fa-linkedin-square {
