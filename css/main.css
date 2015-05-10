@@ -1,10 +1,15 @@
 @font-face {
   font-family: Rispa;
-  src: url('../fonts/Rispa-regular.otf') format('opentype'); }
+  src: url('../fonts/Rispa-regular.otf') format('opentype');
+  src: url('../fonts/RispaRegular.eot');
+  src: url('../fonts/RispaRegular.svg') format('svg');
+  src: url('../fonts/RispaRegular.ttf') format('truetype');
+  src: url('../fonts/RispaRegular.woff') format('woff');
+  src: url('../fonts/RispaRegular.woff2') format('woff2'); }
 
 @font-face {
   font-family: Matchbook;
-  src: url('../fonts/Matchbook.ttf') format('opentype'); }
+  src: url('../fonts/Matchbook.ttf') format('truetype'); }
 
 .marginBottom {
   margin-bottom: 10px; }
@@ -56,7 +61,8 @@ html, body {
 
 h2 {
   font-size: 50px;
-  font-family: Rispa; }
+  font-family: Rispa;
+  text-decoration: underline; }
 
 h3 {
   font-family: Rispa;
@@ -153,7 +159,8 @@ p {
 
 @media all and (max-width: 768px) {
   .black, .white, .black--right, .white--left {
-    width: 100%; }
+    width: 100%;
+    overflow: auto; }
   .center {
     margin-top: 5em; }
   .fa-envelope-o, .fa-github, .fa-linkedin-square {
