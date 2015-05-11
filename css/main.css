@@ -5,7 +5,8 @@
   src: url('../fonts/RispaRegular.svg') format('svg');
   src: url('../fonts/RispaRegular.ttf') format('truetype');
   src: url('../fonts/RispaRegular.woff') format('woff');
-  src: url('../fonts/RispaRegular.woff2') format('woff2'); }
+  src: url('../fonts/RispaRegular.woff2') format('woff2');
+  src: local('Rispa'), url('../fonts/Rispa-regular.otf') format('opentype'); }
 
 @font-face {
   font-family: Matchbook;
