@@ -16,6 +16,9 @@ $(document).ready(function () {
 		$('body, html').animate({
 			scrollTop: $('body, html').offset().top
 		}, 500);
+		$('.overlay').css('display', 'none');
+		$('body').css('overflow', 'auto');
+		$('.circle').css('display', 'block');
 	});
 
 	$('.overlayButton').on('click', function () {

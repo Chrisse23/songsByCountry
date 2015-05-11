@@ -30,6 +30,10 @@ html, body {
   height: 100%;
   position: relative; }
 
+.image {
+  background-image: url('../images/startpage.JPG');
+  background-size: cover; }
+
 .black {
   width: 50%;
   height: 100%;
@@ -80,6 +84,11 @@ i {
   text-align: center;
   margin-top: 50%; }
 
+.center--noMarginTop {
+  display: block;
+  text-align: center;
+  padding-top: 18em; }
+
 .quote {
   font-style: italic;
   text-align: center;
@@ -102,8 +111,8 @@ p {
 .circle {
   width: 55px;
   height: 45px;
-  border: 2px solid #E10000;
-  background-color: #E10000;
+  border: 2px solid #ae0000;
+  background-color: #ae0000;
   float: right;
   margin: 20px;
   border-radius: 50%;
@@ -121,17 +130,16 @@ p {
     cursor: pointer; }
 
 .overlayButton {
-  background-color: #E10000;
+  background-color: #ae0000;
   color: #FFFFFF;
   width: 140px;
   height: 50px;
-  margin-top: 50%;
   border: none;
-  border-bottom: 2px solid #E10000;
-  box-shadow: 0px -2px 0px 5px #E10000 inset;
-  -webkit-box-shadow: 0px -2px 0px 5px #E10000 inset;
-  -moz-box-shadow: 0px -2px 0px 5px #E10000 inset;
-  font-size: 12px; }
+  border-bottom: 2px solid #ae0000;
+  box-shadow: 0px -2px 0px 5px #ae0000 inset;
+  -webkit-box-shadow: 0px -2px 0px 5px #ae0000 inset;
+  -moz-box-shadow: 0px -2px 0px 5px #ae0000 inset;
+  font-size: 14px; }
 
 .overlay {
   background-color: #FFFFFF;
