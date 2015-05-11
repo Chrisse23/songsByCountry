@@ -8,14 +8,12 @@ $(document).ready(function () {
 		}, 500);
 		$('.overlay').css('display', 'none');
 		$('body').css('overflow', 'auto');
-		$('.circle').css('display', 'block');
 		$('.image').css('display', 'block');
 	});
 
 	$('.overlayButton').on('click', function () {
 		$('.overlay').css('display', 'block');
 		$('body').css('overflow', 'hidden');
-		$('.circle').css('display', 'none');
 		$('.image').css('display', 'none');
 		$('body, html').animate({
 			scrollTop: $('.overlay').offset().top
