@@ -2,16 +2,6 @@ $(document).ready(function () {
 	var circle = $('.circle');
 	var circlePos = circle.offset().top;
 
-	$(window).scroll(function () {
-		var pos = $(this).scrollTop();
-		
-		if (pos === circlePos) {
-			circle.css('display', 'none');
-		} else {
-			circle.css('display', 'block');
-		}
-	});
-
 	circle.click(function () {
 		$('body, html').animate({
 			scrollTop: $('body, html').offset().top
